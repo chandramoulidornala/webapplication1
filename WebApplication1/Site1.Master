@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            font-size: xx-large;
+            text-decoration: underline;
+        }
+        .auto-style2 {
+            margin-left: 20px;
+        }
+        .newStyle1 {
+            font-family: "Trebuchet MS";
+        }
+        .auto-style3 {
+            font-family: "Trebuchet MS";
+            font-size: xx-large;
+        }
+        .newStyle2 {
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <strong><span class="auto-style3">Welcome to Math Work Space</span></strong><span class="auto-style1"><asp:TextBox ID="TextBox1" runat="server" CssClass="auto-style2" Height="27px" Width="426px"></asp:TextBox>
+            </span>
+            <asp:Button ID="Button1" runat="server" BackColor="Blue" Font-Bold="False" Font-Names="Impact" Font-Size="10pt" ForeColor="#99FF33" Text="SEARCH" />
+            <br />
+            <span class="newStyle2">Calculate on your finger tips</span><br />
+            <br />
+            <asp:HyperLink ID="HyperLink1" runat="server" BackColor="#66FF66" BorderColor="#009900" BorderStyle="Solid" BorderWidth="5px" Font-Bold="True" Font-Italic="True" Font-Underline="False" ForeColor="Red" NavigateUrl="~/ArithmaticCalculator.aspx">Simple calculator</asp:HyperLink>
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                    &nbsp;</p>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
